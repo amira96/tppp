@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="550.0" prefWidth="800.0" styleClass="fond" stylesheets="@source/application.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Graphic.MainWindowController">
+   <children>
+      <VBox layoutX="14.0" layoutY="14.0" prefWidth="150.0" spacing="1.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="50.0">
+         <children>
+            <AnchorPane fx:id="Sort" onMouseClicked="#Trier" prefHeight="60.0" prefWidth="100.0">
+               <children>
+                  <Label layoutX="70.0" opacity="0.0" prefHeight="50.0" prefWidth="80.0" style="-fx-background-color: #cfcfcf; -fx-background-radius: 0 25 25 0;" text="Trier" textFill="#5a85a3" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font name="Berlin Sans FB" size="22.0" />
+                     </font>
+                     <padding>
+                        <Insets left="65.0" />
+                     </padding>
+                  </Label>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="14.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@source/ico/sort-by-attributes-interface-button-option.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="Sum" onMouseClicked="#show_sum_container" prefHeight="60.0" prefWidth="100.0">
+               <children>
+                  <Label layoutX="70.0" opacity="0.0" prefHeight="50.0" prefWidth="80.0" style="-fx-background-color: #cfcfcf; -fx-background-radius: 0 25 25 0;" text="Somme" textFill="#5a85a3" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font name="Berlin Sans FB" size="22.0" />
+                     </font>
+                     <padding>
+                        <Insets left="65.0" />
+                     </padding>
+                  </Label>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="14.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@source/ico/add.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="Reverse" onMouseClicked="#Inverser" prefHeight="60.0" prefWidth="100.0">
+               <children>
+                  <Label layoutX="70.0" opacity="0.0" prefHeight="50.0" prefWidth="80.0" style="-fx-background-color: #cfcfcf; -fx-background-radius: 0 25 25 0;" text="Inverser" textFill="#5a85a3" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font name="Berlin Sans FB" size="22.0" />
+                     </font>
+                     <padding>
+                        <Insets left="65.0" />
+                     </padding>
+                  </Label>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="14.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@source/ico/sort.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="Maxmin" onMouseClicked="#Maxmin" prefHeight="60.0" prefWidth="100.0">
+               <children>
+                  <Label layoutX="70.0" opacity="0.0" prefHeight="50.0" prefWidth="80.0" style="-fx-background-color: #cfcfcf; -fx-background-radius: 0 25 25 0;" text="Max/Min" textFill="#5a85a3" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font name="Berlin Sans FB" size="22.0" />
+                     </font>
+                     <padding>
+                        <Insets left="65.0" />
+                     </padding>
+                  </Label>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="14.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@source/ico/bar-chart.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="function" onMouseClicked="#Fonction" prefHeight="60.0" prefWidth="100.0">
+               <children>
+                  <Label layoutX="70.0" opacity="0.0" prefHeight="50.0" prefWidth="80.0" style="-fx-background-color: #cfcfcf; -fx-background-radius: 0 25 25 0;" text="Fonction" textFill="#5a85a3" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font name="Berlin Sans FB" size="22.0" />
+                     </font>
+                     <padding>
+                        <Insets left="65.0" />
+                     </padding>
+                  </Label>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="14.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@source/ico/function-mathematical-symbol.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+    <AnchorPane minHeight="400.0" minWidth="635.0" prefHeight="400.0" AnchorPane.leftAnchor="180.0">
+         <children>
+            <AnchorPane fx:id="tab1_container" layoutX="44.765625" layoutY="10.0">
+               <children>
+                  <HBox layoutX="0.234375" layoutY="40.0">
+                     <children>
+                        <ScrollPane prefHeight="90.0" prefWidth="402.0" vbarPolicy="NEVER">
+                           <content>
+                              <AnchorPane prefHeight="90.0">
+                                 <children>
+                                    <GridPane fx:id="Tab1" layoutY="5.0">
+                                      <rowConstraints>
+                                        <RowConstraints maxHeight="60.0" minHeight="60.0" percentHeight="0.0" prefHeight="60.0" vgrow="SOMETIMES" />
+                                      </rowConstraints>
+                                    </GridPane>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </ScrollPane>
+                        <AnchorPane prefHeight="60.0" prefWidth="80.0">
+                           <children>
+                              <ImageView fx:id="Rem_Case1" fitHeight="35.0" fitWidth="32.0" layoutX="18.0" layoutY="45.0" onMouseClicked="#rem_case1" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="13.0">
+                                 <image>
+                                    <Image url="@source/ico/backspace.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="Add_Case1" fitHeight="150.0" fitWidth="30.0" layoutX="19.0" layoutY="-1.0" onMouseClicked="#add_case1" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="-1.0">
+                                 <image>
+                                    <Image url="@source/ico/plus-black-symbol.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+                  <Label layoutX="0.234375" text="Vecteur" textFill="#727478">
+                     <font>
+                        <Font name="Maiandra GD" size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="tab2_container" layoutX="44.765625" layoutY="140.0" visible="false">
+               <children>
+                  <HBox layoutX="0.234375" layoutY="40.0">
+                     <children>
+                        <ScrollPane prefHeight="90.0" prefWidth="402.0" vbarPolicy="NEVER">
+                           <content>
+                              <AnchorPane prefHeight="90.0">
+                                 <children>
+                                    <GridPane fx:id="Tab2" layoutY="5.0">
+                                       <rowConstraints>
+                                          <RowConstraints maxHeight="60.0" minHeight="60.0" percentHeight="0.0" prefHeight="60.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                    </GridPane>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </ScrollPane>
+                        <AnchorPane prefHeight="60.0" prefWidth="80.0">
+                           <children>
+                              <ImageView fx:id="Rem_Case2" fitHeight="35.0" fitWidth="32.0" layoutX="18.0" layoutY="45.0" onMouseClicked="#rem_case2" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="13.0">
+                                 <image>
+                                    <Image url="@source/ico/backspace.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="Add_Case2" fitHeight="150.0" fitWidth="30.0" layoutX="19.0" layoutY="-1.0" onMouseClicked="#add_case2" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="-1.0">
+                                 <image>
+                                    <Image url="@source/ico/plus-black-symbol.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+                  <Label layoutX="0.234375" text="Vecteur 2" textFill="#727478">
+                     <font>
+                        <Font name="Maiandra GD" size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="res_container" layoutX="45.0" layoutY="280.0" visible="false">
+               <children>
+                  <HBox layoutY="40.0">
+                     <children>
+                        <ScrollPane prefHeight="85.0" prefWidth="402.0" vbarPolicy="NEVER">
+                           <content>
+                              <AnchorPane prefHeight="90.0">
+                                 <children>
+                                    <GridPane fx:id="Res" layoutY="5.0">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="NEVER" maxWidth="80.0" minWidth="80.0" percentWidth="0.0" prefWidth="80.0" />
+                                          <ColumnConstraints hgrow="NEVER" maxWidth="80.0" minWidth="80.0" percentWidth="0.0" prefWidth="80.0" />
+                                          <ColumnConstraints hgrow="NEVER" maxWidth="80.0" minWidth="80.0" percentWidth="0.0" prefWidth="80.0" />
+                                          <ColumnConstraints hgrow="NEVER" maxWidth="80.0" minWidth="80.0" percentWidth="0.0" prefWidth="80.0" />
+                                          <ColumnConstraints hgrow="NEVER" maxWidth="80.0" minWidth="80.0" percentWidth="0.0" prefWidth="80.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints maxHeight="65.0" minHeight="65.0" percentHeight="0.0" prefHeight="65.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                    </GridPane>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </ScrollPane>
+                     </children>
+                  </HBox>
+                  <Label text="Resultat" textFill="#4059a9">
+                     <font>
+                        <Font name="Maiandra GD" size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="mm_container" layoutX="45.0" layoutY="280.0" visible="false">
+               <children>
+                  <Label text="Resultat" textFill="#4059a9">
+                     <font>
+                        <Font name="Maiandra GD" size="30.0" />
+                     </font>
+                  </Label>
+                  <GridPane AnchorPane.topAnchor="40.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="70.0" minWidth="63.0" prefWidth="63.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="107.0" minWidth="100.0" prefWidth="107.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="70.0" minWidth="70.0" percentWidth="0.0" prefWidth="70.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label text="Min" textFill="#52596e">
+                           <font>
+                              <Font name="Maiandra GD" size="30.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="min" prefHeight="55.0" prefWidth="100.0" text="182" textFill="#4059a9" GridPane.columnIndex="1">
+                           <font>
+                              <Font name="Maiandra GD" size="30.0" />
+                           </font>
+                        </Label>
+                        <Label text="Max" textFill="#52596e" GridPane.columnIndex="2">
+                           <font>
+                              <Font name="Maiandra GD" size="30.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="max" prefHeight="47.0" prefWidth="100.0" text="195" textFill="#4059a9" GridPane.columnIndex="3">
+                           <font>
+                              <Font name="Maiandra GD" size="30.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </GridPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="sum_container" layoutX="45.0" layoutY="280.0" prefHeight="106.0" prefWidth="402.0" visible="false">
+               <children>
+                  <JFXButton fx:id="app_sum" graphicTextGap="10.0" layoutX="126.0" layoutY="14.0" onAction="#Sommer" style="-fx-background-color: #4059a9; -fx-background-radius: 0px;" text="Sommer" textFill="#fefefe">
+                     <font>
+                        <Font name="Maiandra GD" size="22.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@source/ico/sum-sign.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <Label fx:id="err_msg" layoutX="34.0" layoutY="71.0" text="Les deux vecteurs n'ont pas une taille identique" textFill="#ff234f" visible="false">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
